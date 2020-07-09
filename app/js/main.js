@@ -23,5 +23,16 @@ $(function(){
                 
     });
 
+    $('.slider__inner-maxi').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-prev slick-arrow"></button>',
+        nextArrow: '<button class="slick-next slick-arrow"></button>',
+    });
+
+    var mixer = mixitup('.products__inner-works');
+
+
 
 });

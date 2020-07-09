@@ -5,6 +5,11 @@ html{
 *::before, *::after{
     box-sizing: inherit
 }
+body{
+    @include f400;
+    font-size: 16px;
+    color: $text;
+}
 a{
     display: inline-block;
     text-decoration: none;
@@ -21,3 +26,17 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+button.text{
+    @include f400;
+    font-size: 16px;
+    padding: 20px 30px;
+    background-color: transparent;
+    color: #fff;
+    width: 192px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
